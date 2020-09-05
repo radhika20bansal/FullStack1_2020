@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 2px solid darkblue ;
+            margin: 2% auto;
+            border-collapse: collapse;
+        }
+        caption{
+            background-color: darkblue;
+            color: white;
+            font-weight: 600;
+            padding: 12px 0;
+            font-size: 20px;
+        }
+        thead td{
+            font-size: 20px;
+            font-weight: 600;
+            border-bottom: 3px solid grey;
+            border-top: 0px solid ;
+        }
+        
+        td a{
+            text-decoration: none;
+            color: rgb(109, 101, 101);
+        }
+        td a:hover{
+            font-weight: bold;
+            color: lightseagreen;
+        }
+        .check{
+            color: green;
+            text-align: center;
+        }
+        .uncheck{
+            color: red;
+            text-align: center;
+        }
+        table, tr, td{
+            
+            border-top: 2px solid grey;
+            padding: 0px 20px;   
+        }
+        td{
+            height: 50px;
+        }
+        tbody tr:hover{
+            background-color: lightgray;
+        }
+        .no-hover:hover{
+            background-color: none;
+        }
+        .pen{
+            margin-right: 10px;
+            color: grey;
+        }
+        .pen:hover, .trash:hover{
+            color: darkblue;
+        }
+        .trash{
+            color: grey;
+        }
+        
+    </style>
+</head>
+<body>
+        
+            <table>
+                
+                <caption>FullStack Live Project Book</caption>
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Practical Name</td>
+                        <td>Link</td>
+                        <td>Status</td>
+                        <td>Tools</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td> Create a Webpage including HTML basic structure using <br> Online Sandbox Environment and HTML Editor</td>
+                        <td><a href="Practical1.html">Practical 1</a></td>
+                        <td class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td> Live your first webpage on Git-Hub</td>
+                        <td><a href="Practical2.html">Practical 2</a></td>
+                        <td class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Create a Webpage showing a basic html structure using character  <br> entities and span tag</td>
+                        <td><a href="Practical3.html">Practical 3</a></td>
+                        <td  class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Create a Webpage having list of all practicals with their individual <br> practical page links
+                        </td>
+                        <td><a href="Practical4page.html">Practical 4</a></td>
+                        <td class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td> Create a Webpage showing the use of Image-Map <br> in Web Application</td>
+                        <td><a href="Practical5.html">Practical 5</a></td>
+                        <td  class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Create Cards Layout using CSS layout properties</td>
+                        <td><a href="Practical6.html">Practical 6</a></td>
+                        <td  class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Create a Webpage layout using Div tags</td>
+                        <td><a href="Practical7.html">Practical 7</a></td>
+                        <td  class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Create a Webpage having Fixed Navigation Bar with the given <br> content</td>
+                        <td><a href="Practical8.html">Practical 8</a></td>
+                        <td class="check">Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Create a Responsive web Layout with Responsive Navigation Bar</td>
+                        <td><a href="Practical9.html">Practical 9</a></td>
+                        <td class="uncheck">Un-Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Create a Responsive Side-bar Navigation Menu</td>
+                        <td><a href="Practical10.html">Practical 10</a></td>
+                        <td class="uncheck">Un-Checked</td>
+                        <td>
+                            <i class="fas fa-pencil-alt pen" title="Edit"></i>
+                            <i class="fas fa-trash trash" title="Delete"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    </body>
+</body>
+</html>
