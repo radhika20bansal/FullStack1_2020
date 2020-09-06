@@ -110,6 +110,7 @@ i{
     width: 80%;
 }
 
+/*Responsiveness*/
 @media (max-width:768px){
     .sidebar{
         width: 100%;
