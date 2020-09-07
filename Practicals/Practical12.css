@@ -26,6 +26,9 @@ th{
     padding: 15px 25px;
     text-align: center;
 }
+th i{
+    margin-right: 10px;
+}
 tbody tr td{
     padding: 10px 25px;
     border-left:2px solid white;
@@ -54,4 +57,5 @@ tbody tr:nth-child(odd){
 }
 tr td .sign:hover{
     background-color: crimson;
+    cursor: pointer;
 }
