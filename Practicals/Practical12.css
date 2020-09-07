@@ -26,7 +26,7 @@ th{
     padding: 15px 25px;
     text-align: center;
 }
-th i{
+thead th i{
     margin-right: 10px;
 }
 tbody tr td{
