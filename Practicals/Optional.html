@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            margin: 1rem;
+            box-shadow: 0 1rem 3rem grey;
+            background-color: #2f485f;
+            overflow: hidden;
+        }
+        .top{ 
+            border-bottom: 2px solid grey;
+            color: white;
+            padding: 4rem 0;
+            display: flex;
+        }
+        .top div{
+            float: left;
+        }
+        .top::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .top div.second{
+            width: 60%;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .top .second .another{
+            width: 6rem;
+            margin-right: 20%;
+        }
+        .top div.first{
+            margin-left: 4%;
+            width: 30%;
+            margin-right: 10%;
+            padding: 1rem;
+        }
+        .top h2{
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .top p{
+            font-size: 1.4rem;
+            text-align: justify;
+            word-spacing: 0.3rem;
+        }
+        .top .another a{
+            margin-bottom: 0.4rem;
+            text-decoration: none;
+            color: white;
+            font-size: 1.4rem;
+            display: block;
+            letter-spacing: 1px;
+        }
+        .mid{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            padding: 2rem 0;
+            color: white;
+            border-bottom: 2px solid grey;
+        }
+        button{
+            margin-left: 1.5rem;
+            padding: 1rem;
+            font-size: 1.5rem;
+            border-radius: 0.8rem 1.7rem;
+            background-color: crimson;
+            color: white;
+            font-weight: 600;
+            border: none;
+        }
+        button:hover{
+            cursor: pointer;
+            background-color: lightgrey;
+            color: black;
+        }
+        .bottom{
+            padding: 6rem 0;
+            position: relative;
+        }
+        .links{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            padding: 2.4rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .links h1 span{
+            border-radius: 50%;
+            font-size: 2.2rem;
+            box-shadow: 0 5px 5px black;
+            margin-right: 1.5rem;
+            justify-content: center;
+        }
+        .links h1 span:nth-child(1){
+            background-color:#38658f ;
+            padding: 10px 20px;
+        }
+        .links h1 span:nth-child(2){
+            background-color:#59d859 ;
+            padding: 10px 15px;
+        }
+        .links h1 span:nth-child(3){
+            background-color:#f561a6 ;
+            padding: 10px 15px;
+        }
+        .links h1 span:nth-child(4){
+            background-color:#eb8634 ;
+            padding: 10px 10px;
+        }
+        .links h1 span:nth-child(5){
+            background-color:#497aa8 ;
+            padding: 10px 15px;
+        }
+        .links h1 span i{
+            font-size: 2rem;
+            color: white;
+        }
+        .copyright{
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.3rem;
+            padding: 1.4rem 0;
+            word-spacing: 0.2rem;
+            background-color: rgb(90, 87, 87);
+        }
+
+        @media(max-width: 850px){
+          .top{
+              flex-direction: column;
+              padding: 2rem 0;
+          }
+           .top div.second {
+               width: 100%;
+               padding: 2% 8% ;
+           }
+           .top .second .another{
+               margin-right: 28%;
+           }
+           .top div.first{ 
+               margin-left: 0;
+               width: 100%;
+               margin-bottom: 2rem;
+           }
+        }
+
+        @media(max-width:600px){
+            main{
+                width: 100%;
+                margin: 0;
+            }
+            .top{
+                padding: 1rem 0;
+            }
+           .top div.second {
+               width: 100%;
+               flex-direction: column;
+           }
+           .top .second .another{
+               width: 100%;
+               margin-left: 27%;
+               text-align: center;
+               margin-bottom: 5%;
+           }
+           .top .second .another:nth-child(3){
+               margin-bottom: 0;
+           }
+           .top .another a{
+                font-size: 1.4rem;
+                text-align: center;
+            }
+            .top h2{
+                margin-bottom: 1.2rem;
+            }
+           .top div.first{ 
+               margin-bottom: 0.5rem;
+           }
+           .mid{
+               font-size: 1.5rem;
+               padding: 1.5rem 3%;
+           }
+           button{
+                margin-left:5% ;
+                padding: 1rem;
+                font-size: 1.2rem;
+                border-radius: 0.5rem 1.4rem;
+           }
+            .links{
+                width: 100%;
+                padding: 9% 6%;
+                display: inline-block;
+            }
+           .links h1 span{
+                margin-left: 4%;
+                border-radius: 50%;
+                font-size: 1.7rem;
+                box-shadow: 0 5px 5px black;
+                margin-right: 4%;
+                justify-content: center;
+            }
+            .links h1 span i{
+                font-size: 1.4rem;
+            }
+            .links h1 span:nth-child(1){
+                background-color:#38658f ;
+                padding: 8px 17px;
+            }
+            .links h1 span:nth-child(2){
+                background-color:#59d859 ;
+                padding: 8px 13px;
+            }
+            .links h1 span:nth-child(3){
+                background-color:#f561a6 ;
+                padding: 8px 13px;
+            }
+            .links h1 span:nth-child(4){
+                background-color:#eb8634 ;
+                padding: 8px 8px;
+            }
+            .links h1 span:nth-child(5){
+                background-color:#497aa8 ;
+                padding: 8px 13px;
+            }
+            .copyright{
+                font-size: 1rem;
+                padding: 1.2rem 0;
+                word-spacing: 0rem;
+            }
+        }
+
+        @media(max-width: 490px){
+            .mid{
+               font-size: 1.3rem;
+               padding: 1.5rem 2%;
+           }
+            button{
+                margin-left:3% ;
+                padding: 0.8rem;
+                font-size: 1.2rem;
+                border-radius: 0.5rem 1.4rem;
+           }
+           .links{
+                width: 100%;
+                padding: 4% 9%; 
+            }
+            .links h1 span{
+                margin-left: 8%;
+                border-radius: 50%;
+                font-size: 1.7rem;
+                box-shadow: 0 5px 5px black;
+                margin-right: 4%;
+                margin-bottom: 4%;
+                display: inline-block;
+            }
+            .copyright{
+                font-size: 1rem;
+                padding: 1rem 0;
+            }
+        }
+        @media(max-width:295px){
+            main{
+                max-width:290px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="top">
+            <div class="first">
+                <h2>Footer Content</h2>
+                <p>Here you can use rows and columns to organise your footer content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, veniam.</p>
+            </div>
+            <div class="second">
+                <span class="another">
+                    <h2>Link</h2>
+                    <a href="">Link1</a>
+                    <a href="">Link2</a>
+                    <a href="">Link3</a>
+                    <a href="">Link4</a>  
+                </span>
+                <span class="another">
+                    <h2>Link</h2>
+                    <a href="">Link1</a>
+                    <a href="">Link2</a>
+                    <a href="">Link3</a>
+                    <a href="">Link4</a>  
+                </span>
+                <span class="another">
+                    <h2>Link</h2>
+                    <a href="">Link1</a>
+                    <a href="">Link2</a>
+                    <a href="">Link3</a>
+                    <a href="">Link4</a>  
+                </span>
+            </div>
+        </section>
+        <section class="mid">
+            Register for free
+            <button type="submit">Sign Up!</button>
+        </section>
+        <section class="bottom">
+            <div class="links">
+                <h1>
+                    <span><i class="fa fa-facebook"></i></span>
+                    <span><i class="fa fa-github"></i></span>
+                    <span><i class="fa fa-dribbble"></i></span>
+                    <span><i class="fa fa-google-plus"></i></span>
+                    <span><i class="fa fa-linkedin"></i></span>
+                </h1>
+            </div>
+            <div class="copyright">
+                &copy; 2020 CopyRight: All Rights Reserved
+            </div>
+        </section>
+    </main>
+</body>
+</html>
