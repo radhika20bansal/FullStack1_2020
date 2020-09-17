@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Practical14.css">
+</head>
+<body>
+    <h1>Form Templates</h1>
+    <section class="main">
+        
+        <!--First Form-->
+        <section class="first">
+            <div class="gradient">
+                <h2>Log in</h2>
+                <p>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+                </p>
+            </div>
+            <form action="action.php" class="form-first">
+                <label for="">Your email</label>
+                <input type="email">
+                <label for="">Your Password</label>
+                <input type="password">
+                <h5>Forgot <a href="#">Password?</a></h5>
+            </form>
+            <footer class="first-footer">
+                <button type="submit">Log In</button>
+                <p> Don't have an account? <a href="#">Sign up</a></p>
+            </footer>
+        </section>
+
+
+        <!--Second Form-->
+        <section class="first">
+            <div class="signup">
+                <h2>Sign Up</h2>
+            </div>
+            <form action="action.php" class="form-second">
+                <label for="">Your email</label>
+                <input type="email">
+                <label for="">Your Password</label>
+                <input type="password">
+                <br>
+                <input type="checkbox" name="terms" id="check"><span>Accept the <a href="#">Terms and Conditions</a></span> 
+                <div class="buttons">
+                    <button>Sign Up</button>
+                    <p>Have an account? <a href="#">Log in</a></p>
+                </div>
+            </form>
+            <footer class="second-footer">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-google-plus"></i>
+            </footer>
+        </section>
+        <section class="first">
+            <div class="signin">
+                <h2>Sign In</h2>
+            </div>
+            <form action="action.php" class="form-third">
+                <label for="">Your email</label>
+                <input type="email">
+                <label for="">Your Password</label>
+                <input type="password">
+                <h5>Forgot <a href="#">Password?</a></h5>
+                <button type="submit">Sign in</button>
+                <p><b>Or Sign in with:</b></p>
+            </form>
+            <footer class="third-footer">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+            </footer>
+        </section>
+    </section>
+</body>
+</html>
