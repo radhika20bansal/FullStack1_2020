@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(201, 55, 10);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 500px;
+    border-radius: 5px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+header h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.form-control input {
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid grey;
+}
+
+.form-control input::placeholder {
+    font-size: 1rem;
+}
+
+.form-control i {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.form button {
+    width: 100%;
+    background-color: rgb(201, 55, 10);
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-control.error input {
+    border: 2px solid crimson;
+}
+
+.form-control.error .fa-exclamation-circle {
+    visibility: visible;
+    color: crimson;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: crimson;
+}
+
+.form-control.success input {
+    border: 2px solid green;
+}
+
+.form-control.success .fa-check-circle {
+    color: green;
+    visibility: visible;
+}
